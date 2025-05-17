@@ -4,9 +4,7 @@ project(UnrealEngineSkyAtmosphere
     LANGUAGES CXX
 )
 
-
 add_subdirectory(tinyexr)
-
 
 
 set(IMGUI_PATH ${CMAKE_CURRENT_SOURCE_DIR}/imgui)
