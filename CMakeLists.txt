@@ -35,6 +35,11 @@ target_include_directories(DX11Base PUBLIC
 target_compile_definitions(DX11Base PUBLIC
     UNICODE
 )
+if (MSVC)
+    # This ensures all member pointer variables are initialized to nullptr.
+    # Without this `resetComPtr` function will cause a crash.
+    target_compile_options(DX11Base PUBLIC /sdl)
+endif()
 
 
 add_executable(Application
