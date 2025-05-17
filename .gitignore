@@ -338,6 +338,9 @@ screenshot\.exr
 # CMake output
 /build
 
+# vscode
+/.vscode
+
 # Ignore folders with reference captures
 _*/
 z*/
