@@ -335,6 +335,9 @@ imgui\.ini
 
 screenshot\.exr
 
+# CMake output
+/build
+
 # Ignore folders with reference captures
 _*/
 z*/
